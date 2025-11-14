@@ -1,0 +1,179 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Kandivali Clinic - Feedback Form</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <div class="container">
+        <div class="header">
+            <h1>🐾 ALWAYS CARE ANIMAL CLINIC — KANDIVALI 💖</h1>
+            <p class="subtitle">Your feedback helps us care better for the voiceless.</p>
+        </div>
+
+        <form id="feedbackForm" class="feedback-form">
+            <div class="form-section">
+                <label for="dateOfVisit">📅 Date of Visit:</label>
+                <input type="date" id="dateOfVisit" name="dateOfVisit" required>
+            </div>
+
+            <div class="form-section">
+                <label for="caseNumber">🐶 Case Number:</label>
+                <input type="text" id="caseNumber" name="caseNumber" placeholder="Enter case number">
+            </div>
+
+            <div class="form-section">
+                <label for="name">👤 Your Name:</label>
+                <input type="text" id="name" name="name" placeholder="Enter your name" required>
+            </div>
+
+            <div class="form-section">
+                <label for="contactNumber">📱 Contact Number:</label>
+                <input type="tel" id="contactNumber" name="contactNumber" placeholder="Enter your phone number" required>
+            </div>
+
+            <div class="form-section">
+                <label>⭐ Overall Rating:</label>
+                <div class="radio-group">
+                    <label class="radio-label">
+                        <input type="radio" name="overallRating" value="Excellent" required>
+                        <span>Excellent</span>
+                    </label>
+                    <label class="radio-label">
+                        <input type="radio" name="overallRating" value="Good" required>
+                        <span>Good</span>
+                    </label>
+                    <label class="radio-label">
+                        <input type="radio" name="overallRating" value="Can be better" required>
+                        <span>Can be better</span>
+                    </label>
+                    <label class="radio-label">
+                        <input type="radio" name="overallRating" value="Poor" required>
+                        <span>Poor</span>
+                    </label>
+                </div>
+            </div>
+
+            <div class="form-section">
+                <h3>💬 Feedback Questions</h3>
+                
+                <div class="question-group">
+                    <label>🩺 Was the doctor/staff clear in explaining the problem and treatment?</label>
+                    <div class="radio-group">
+                        <label class="radio-label">
+                            <input type="radio" name="clearExplanation" value="Yes" required>
+                            <span>Yes</span>
+                        </label>
+                        <label class="radio-label">
+                            <input type="radio" name="clearExplanation" value="Somewhat" required>
+                            <span>Somewhat</span>
+                        </label>
+                        <label class="radio-label">
+                            <input type="radio" name="clearExplanation" value="No" required>
+                            <span>No</span>
+                        </label>
+                    </div>
+                </div>
+
+                <div class="question-group">
+                    <label>🐾 Did you feel your animal received proper attention and care?</label>
+                    <div class="radio-group">
+                        <label class="radio-label">
+                            <input type="radio" name="properAttention" value="Yes" required>
+                            <span>Yes</span>
+                        </label>
+                        <label class="radio-label">
+                            <input type="radio" name="properAttention" value="Somewhat" required>
+                            <span>Somewhat</span>
+                        </label>
+                        <label class="radio-label">
+                            <input type="radio" name="properAttention" value="No" required>
+                            <span>No</span>
+                        </label>
+                    </div>
+                </div>
+
+                <div class="question-group">
+                    <label>🕓 Was the waiting time reasonable?</label>
+                    <div class="radio-group">
+                        <label class="radio-label">
+                            <input type="radio" name="waitingTime" value="Yes" required>
+                            <span>Yes</span>
+                        </label>
+                        <label class="radio-label">
+                            <input type="radio" name="waitingTime" value="Could be shorter" required>
+                            <span>Could be shorter</span>
+                        </label>
+                        <label class="radio-label">
+                            <input type="radio" name="waitingTime" value="Too long" required>
+                            <span>Too long</span>
+                        </label>
+                    </div>
+                </div>
+
+                <div class="question-group">
+                    <label>🧹 Was the clinic clean and comfortable?</label>
+                    <div class="radio-group">
+                        <label class="radio-label">
+                            <input type="radio" name="cleanComfortable" value="Yes" required>
+                            <span>Yes</span>
+                        </label>
+                        <label class="radio-label">
+                            <input type="radio" name="cleanComfortable" value="Somewhat" required>
+                            <span>Somewhat</span>
+                        </label>
+                        <label class="radio-label">
+                            <input type="radio" name="cleanComfortable" value="No" required>
+                            <span>No</span>
+                        </label>
+                    </div>
+                </div>
+
+                <div class="question-group">
+                    <label>💊 Did you get clear instructions for follow-up or home care?</label>
+                    <div class="radio-group">
+                        <label class="radio-label">
+                            <input type="radio" name="clearInstructions" value="Yes" required>
+                            <span>Yes</span>
+                        </label>
+                        <label class="radio-label">
+                            <input type="radio" name="clearInstructions" value="Somewhat" required>
+                            <span>Somewhat</span>
+                        </label>
+                        <label class="radio-label">
+                            <input type="radio" name="clearInstructions" value="No" required>
+                            <span>No</span>
+                        </label>
+                    </div>
+                </div>
+
+                <div class="question-group">
+                    <label for="improvements">💭 What improvements would you like to see?</label>
+                    <textarea id="improvements" name="improvements" rows="4" placeholder="Share your suggestions..."></textarea>
+                </div>
+            </div>
+
+            <div class="info-box">
+                <p>🎁 <strong>Monthly Prize:</strong> Every month, 3 feedback entries win a Free Blood Test or Vaccination for a stray!</p>
+            </div>
+
+            <button type="submit" class="submit-btn">Submit Feedback</button>
+        </form>
+
+        <div id="message" class="message"></div>
+        
+        <div class="back-link">
+            <a href="/">← Back to Clinic Selection</a>
+        </div>
+    </div>
+
+    <script src="form.js"></script>
+    <script>
+        // Set clinic name for this form
+        document.getElementById('feedbackForm').setAttribute('data-clinic', 'kandivali');
+    </script>
+</body>
+</html>
+
