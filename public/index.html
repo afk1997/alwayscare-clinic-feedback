@@ -3,36 +3,92 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Always Care Animal Clinic - Feedback Forms</title>
-    <link rel="stylesheet" href="styles.css">
+    <title>Always Care Animal Care Centre - Feedback Portal</title>
+    <meta name="description" content="Submit feedback for Always Care Animal Care Centre. Help us provide better care for the voiceless.">
+    <link rel="stylesheet" href="alt-styles.css">
 </head>
 <body>
-    <div class="container">
-        <div class="header">
-            <h1>🐾 ALWAYS CARE ANIMAL CLINIC 💖</h1>
-            <p class="subtitle">Your feedback helps us care better for the voiceless.</p>
-        </div>
+    <!-- Hero Section -->
+    <section class="hero-section">
+        <img 
+            src="images/always-care-logo.png" 
+            alt="Always Care Animal Care Centre - Compassionate veterinary care for all animals" 
+            class="logo"
+        />
         
-        <div class="clinic-selector">
+        <p class="tagline">
+            Your feedback helps us care better for the voiceless.
+        </p>
+        
+        <!-- Prize Banner -->
+        <div class="prize-banner">
+            <svg class="gift-icon" xmlns="http://www.w3.org/2000/svg" width="32" height="32" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                <polyline points="20 12 20 22 4 22 4 12"></polyline>
+                <rect x="2" y="7" width="20" height="5"></rect>
+                <line x1="12" y1="22" x2="12" y2="7"></line>
+                <path d="M12 7H7.5a2.5 2.5 0 0 1 0-5C11 2 12 7 12 7z"></path>
+                <path d="M12 7h4.5a2.5 2.5 0 0 0 0-5C13 2 12 7 12 7z"></path>
+            </svg>
+            <p class="prize-text">
+                Monthly Prize: 3 feedback entries win a Free Blood Test or Vaccination for a stray!
+            </p>
+        </div>
+    </section>
+    
+    <!-- Clinic Selection Section -->
+    <section class="clinic-section">
+        <div class="section-header">
             <h2>Select Your Clinic Location</h2>
-            <div class="clinic-buttons">
-                <a href="/ghatkopar" class="clinic-btn ghatkopar">
-                    <span class="clinic-icon">🏥</span>
-                    <span class="clinic-name">Ghatkopar Clinic</span>
-                    <span class="clinic-subtitle">Submit Feedback</span>
-                </a>
-                <a href="/kandivali" class="clinic-btn kandivali">
-                    <span class="clinic-icon">🏥</span>
-                    <span class="clinic-name">Kandivali Clinic</span>
-                    <span class="clinic-subtitle">Submit Feedback</span>
-                </a>
-            </div>
+            <div class="underline"></div>
         </div>
         
-        <div class="info-box">
-            <p>💡 <strong>Monthly Prize:</strong> 3 feedback entries win a Free Blood Test or Vaccination for a stray!</p>
+        <div class="clinic-grid">
+            <!-- Ghatkopar Clinic Card -->
+            <a href="ghatkopar.html" class="clinic-card ghatkopar-card">
+                <div class="paw-decoration">🐾</div>
+                <div class="card-content">
+                    <svg class="location-icon" xmlns="http://www.w3.org/2000/svg" width="80" height="80" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round">
+                        <path d="M21 10c0 7-9 13-9 13s-9-6-9-13a9 9 0 0 1 18 0z"></path>
+                        <circle cx="12" cy="10" r="3"></circle>
+                    </svg>
+                    
+                    <div class="card-text">
+                        <h3>Ghatkopar Clinic</h3>
+                        <p>Submit Feedback</p>
+                    </div>
+                    
+                    <button class="continue-btn">
+                        Continue
+                        <svg class="arrow-icon" xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                            <polyline points="9 18 15 12 9 6"></polyline>
+                        </svg>
+                    </button>
+                </div>
+            </a>
+            
+            <!-- Kandivali Clinic Card -->
+            <a href="kandivali.html" class="clinic-card kandivali-card">
+                <div class="paw-decoration">🐾</div>
+                <div class="card-content">
+                    <svg class="location-icon" xmlns="http://www.w3.org/2000/svg" width="80" height="80" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round">
+                        <path d="M21 10c0 7-9 13-9 13s-9-6-9-13a9 9 0 0 1 18 0z"></path>
+                        <circle cx="12" cy="10" r="3"></circle>
+                    </svg>
+                    
+                    <div class="card-text">
+                        <h3>Kandivali Clinic</h3>
+                        <p>Submit Feedback</p>
+                    </div>
+                    
+                    <button class="continue-btn">
+                        Continue
+                        <svg class="arrow-icon" xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                            <polyline points="9 18 15 12 9 6"></polyline>
+                        </svg>
+                    </button>
+                </div>
+            </a>
         </div>
-    </div>
+    </section>
 </body>
 </html>
-
